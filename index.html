@@ -1,11 +1,11 @@
 ---
 layout: default
-title: ÎÒµÄBlog
+title: æˆ‘çš„Blog
 ---
 <h2>{{ page.title }}</h2>
-<p>×îÐÂÎÄÕÂ</p>
+<p>æœ€æ–°æ–‡ç« </p>
 <ul>
-¡¡¡¡¡¡¡¡{% for post in site.posts %}
-¡¡¡¡¡¡¡¡¡¡¡¡<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> {{ post.date | date_to_string }}</li>
-¡¡¡¡¡¡¡¡{% endfor %}
+        {% for post in site.posts %}
+            <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> {{ post.date | date_to_string }}</li>
+        {% endfor %}
 </ul>
